@@ -1,7 +1,7 @@
 [build]
-  base = "client"
-  publish = "dist/spa"
-  command = "npm run build"
+  base = "."                   # Root of your repo
+  publish = "dist/spa"         # Folder with your static build output
+  command = "pnpm run build"   # Use pnpm to build, since you use pnpm locally
 
 [functions]
   directory = "netlify/functions"
